@@ -55,7 +55,7 @@
       }
 
       if (code) {
-        const redirectUrl = 'alan://callback?code=' + encodeURIComponent(code) +
+        const redirectUrl = 'tensorheart://callback?code=' + encodeURIComponent(code) +
           (state ? '&state=' + encodeURIComponent(state) : '');
         window.location.href = redirectUrl;
 

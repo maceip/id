@@ -50,12 +50,12 @@
       if (error) {
         document.getElementById('status').innerHTML =
           '<span class="error">Error: ' + error + '</span><br><br>' +
-          '<a href="alan://callback?error=' + encodeURIComponent(error) + '">Return to app</a>';
+          '<a href="chatalyst://callback?error=' + encodeURIComponent(error) + '">Return to app</a>';
         return;
       }
 
       if (code) {
-        const redirectUrl = 'tensorheart://callback?code=' + encodeURIComponent(code) +
+        const redirectUrl = 'chatalyst://callback?code=' + encodeURIComponent(code) +
           (state ? '&state=' + encodeURIComponent(state) : '');
         window.location.href = redirectUrl;
 
